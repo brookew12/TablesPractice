@@ -61,6 +61,10 @@ class PastaTableTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
 
         cell.textLabel?.text = allPasta[indexPath.row].title
+        
+        cell.detailTextLabel?.text = allPasta[indexPath.row].text
+        
+        cell.imageView?.image = UIImage(named: allPasta[indexPath.row].image)
 
         return cell
     }
