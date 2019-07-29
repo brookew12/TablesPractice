@@ -11,6 +11,7 @@
 		1808D56422EF2DAC003DF3E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1808D56222EF2DAC003DF3E2 /* Main.storyboard */; };
 		1808D56622EF2DAE003DF3E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1808D56522EF2DAE003DF3E2 /* Assets.xcassets */; };
 		1808D56922EF2DAE003DF3E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1808D56722EF2DAE003DF3E2 /* LaunchScreen.storyboard */; };
+		1808D57122EF3199003DF3E2 /* PastaTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1808D57022EF3199003DF3E2 /* PastaTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		1808D56522EF2DAE003DF3E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1808D56822EF2DAE003DF3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1808D56A22EF2DAE003DF3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1808D57022EF3199003DF3E2 /* PastaTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastaTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				1808D56522EF2DAE003DF3E2 /* Assets.xcassets */,
 				1808D56722EF2DAE003DF3E2 /* LaunchScreen.storyboard */,
 				1808D56A22EF2DAE003DF3E2 /* Info.plist */,
+				1808D57022EF3199003DF3E2 /* PastaTableTableViewController.swift */,
 			);
 			path = TablesPractice;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1808D57122EF3199003DF3E2 /* PastaTableTableViewController.swift in Sources */,
 				1808D55F22EF2DAC003DF3E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
