@@ -8,7 +8,32 @@
 
 import UIKit
 
+
+
+struct Pasta{
+    var id : Int
+    var title : String
+    var text : String
+    var image : String
+}
+
+
 class PastaTableTableViewController: UITableViewController {
+    
+    var allPasta = [
+        Pasta(id : 1,
+              title : "Penne",
+              text: "Short cylinder shaped pasta with the ends cut diagonally.",
+            image: "Penne"
+              ),
+        Pasta(id : 2,
+              title: "Ravioli",
+              text: "Double sided pasta with filling inside.",
+            image: "Ravioli"
+              ),
+        Pasta(id: 3, title: "Bow Tie", text: "Looks like a bow tie with triangular edges.", image: "Bow Tie")
+        
+    ]
 
     
 
@@ -23,19 +48,19 @@ class PastaTableTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 3
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return allPasta.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
 
-        cell.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
+        cell.textLabel?.text = allPasta[indexPath.row].title
 
         return cell
     }
